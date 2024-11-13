@@ -23,7 +23,7 @@
 /* Typography
 --------------------------------------------- */
 body {
-	font-family: "Poppins", serif;
+	font-family: "Poppins", sans-serif;
     line-height: 1.5rem;
 }
 
@@ -53,18 +53,14 @@ th,
 td {
 	border: .1rem solid #1f1d7c;
     border-collapse: collapse;
+    padding: .5rem;
 }
 
 th {
     text-align: center;
 }
 
-td {
-    padding: .5rem;
-}
-
 caption {
-    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
@@ -108,13 +104,13 @@ form textarea {
 
 /* Images */
 img {
-    width: 10rem;
+    border-radius: .5rem;
+    width: 100%;
 }
 
 /* Video */
 video {
-    margin-bottom: 1rem;
-    display: flex;
+    display: block;
     justify-self: center;
 }
 
@@ -173,25 +169,11 @@ a:active {
     margin: 1rem;
 }
 
-.national-symbols h2 {
-    font-size: 1.5rem;
-}
-
 .national-symbols article {
     border-radius: .5rem;
     box-shadow: .5rem .5rem 1rem #e26767;
     padding: .8rem;
     margin-bottom: 2rem
-}
-
-.national-symbols article img {
-    width: 100%;
-    border-radius: .5rem;
-    display: block;
-}
-
-.definition {
-    width: 100%;
 }
 
 .definition h3 {
@@ -203,7 +185,6 @@ a:active {
     .site-header {
         flex-direction: row;
         justify-content: space-between;
-        align-content: center;
     }
 
     .site-header img {
@@ -228,10 +209,6 @@ a:active {
         margin-top: 2rem;
     }
 
-    .key-facts th {
-        padding: 1rem;
-    }
-
     .symbols-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -249,23 +226,13 @@ a:active {
 }
 
 /* Culture Page */
-.culture h1 {
-    font-size: 1.8rem;
-    margin: 1rem auto .5rem;
-}
-
+.culture h1,
 .culture h2 {
-    font-size: 1.5rem;
-    margin: 0;
+    margin: 0 auto .5rem;
 }
 
 .culture h3 {
     font-size: 1.5rem;
-}
-
-.culture-wrapper article img {
-    border-radius: .5rem;
-    width: 100%;
 }
 
 .culture-wrapper {
@@ -281,25 +248,12 @@ a:active {
     justify-items: center;
 }
 
-.culture-wrapper article p {
-    border: white;
-}
-
 /* Attractions */
-.attractions h1 {
-    margin: 0;
-}
 .places,
 .foods {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.places img,
-.foods article img {
-    border-radius: .5rem;
-    width: 100%;
 }
 
 .places article,
@@ -310,11 +264,6 @@ a:active {
     margin: 0 auto .5rem;
 }
 
-.foods-section h2 {
-    font-size: 1.8rem;
-    margin: 2rem auto 1rem;
-}
-
 .places article h3 {
     font-size: 1.7rem;
     margin: 1rem auto .5rem;
@@ -323,18 +272,16 @@ a:active {
 @media(min-width:50em) {
     .attractions h1 {
         font-size: 2rem;
-        margin-bottom: 1rem;
     }
+
     .foods {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(3, 250px);
         gap: 1rem;
-        margin-bottom: 1rem;
     }
 
     .foods article img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -355,12 +302,10 @@ a:active {
     }
 
     .credits h1 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
+        font-size: 2rem;
     }
 
     .credits section h2 {
-        font-size: 2rem;
         margin: 2rem auto .5rem;
     }
 }
