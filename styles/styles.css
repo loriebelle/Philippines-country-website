@@ -1,0 +1,375 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN ANOTHER FILE)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Layouts
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body {
+	font-family: "Poppins", serif;
+    line-height: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+p {
+	margin: .8rem;
+}
+
+/* Elements
+--------------------------------------------- */
+/* Table */
+table,
+th,
+td {
+	border: .1rem solid #1f1d7c;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    padding: .5rem;
+}
+
+caption {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+/* Blockquote */
+blockquote {
+    margin: 3rem auto 1rem;
+    text-align: center;
+    max-width: 40rem;
+    justify-self: center;
+}
+
+/* Contact Form */
+form {
+    max-width: 25rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    border: .1rem solid rgba(42, 42, 194, 0.766);
+    border-radius: 1rem;
+}
+
+form h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+.submit {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: bisque;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Images */
+img {
+    width: 10rem;
+}
+
+/* Video */
+video {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-self: center;
+}
+
+/* Links
+--------------------------------------------- */
+a {
+	text-decoration: none;
+    color: #000000;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #5a6de3;
+}
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+.site-wrapper {
+    margin: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Header
+--------------------------------------------- */
+.site-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.site-header img {
+    width: 5rem;
+    margin: auto;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: .5rem;
+    justify-content: center;
+}
+
+.site-navigation li {
+    margin: 0 .4rem;
+}
+/* Main
+--------------------------------------------- */
+/* Home Page */
+.national-symbols {
+    margin: 1rem;
+}
+
+.national-symbols h2 {
+    font-size: 1.5rem;
+}
+
+.national-symbols article {
+    border-radius: .5rem;
+    box-shadow: .5rem .5rem 1rem #e26767;
+    padding: .8rem;
+    margin-bottom: 2rem
+}
+
+.national-symbols article img {
+    width: 100%;
+    border-radius: .5rem;
+    display: block;
+}
+
+.definition {
+    width: 100%;
+}
+
+.definition h3 {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+@media (min-width:50em) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    .site-header img {
+        margin: 0 2rem 1rem;
+        width: 6rem;
+    }
+
+    .site-navigation,
+    .site-navigation li {
+        align-self: center;
+        margin-right: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+    }
+
+    .key-facts {
+        max-width: 50rem;
+        justify-self: center;
+        margin-top: 2rem;
+    }
+
+    .key-facts th {
+        padding: 1rem;
+    }
+
+    .symbols-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .symbols-wrapper article {
+        max-width: 25rem;
+        margin: 1rem;
+    }
+
+    .national-symbols h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Culture Page */
+.culture h1 {
+    font-size: 1.8rem;
+    margin: 1rem auto .5rem;
+}
+
+.culture h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.culture h3 {
+    font-size: 1.5rem;
+}
+
+.culture-wrapper article img {
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.culture-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.culture-section article,
+.practices article {
+    flex-direction: column;
+    max-width: 20rem;
+    justify-items: center;
+}
+
+.culture-wrapper article p {
+    border: white;
+}
+
+/* Attractions */
+.attractions h1 {
+    margin: 0;
+}
+.places,
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.places img,
+.foods article img {
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.places article,
+.foods article {
+    flex-direction: column;
+    max-width: 20rem;
+    justify-items: center;
+    margin: 0 auto .5rem;
+}
+
+.foods-section h2 {
+    font-size: 1.8rem;
+    margin: 2rem auto 1rem;
+}
+
+.places article h3 {
+    font-size: 1.7rem;
+    margin: 1rem auto .5rem;
+}
+
+@media(min-width:50em) {
+    .attractions h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .foods {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 250px);
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .foods article img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .foods-section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Credits */
+.credits a {
+    color: #bd1717;
+}
+
+@media(min-width:50em) {
+    .credits {
+        text-align: center;
+    }
+
+    .credits h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .credits section h2 {
+        font-size: 2rem;
+        margin: 2rem auto .5rem;
+    }
+}
+
+/* Footer
+--------------------------------------------- */
+.site-footer,
+.site-footer p {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: .1rem;
+}

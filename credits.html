@@ -6,14 +6,20 @@
     <title>Explore the Wonders of the Philippines | Culture and Attractions</title>
     <meta name="description" content="Embrace the charm and energy of the Philippines. Dive into its beauty, vibrant culture, and the welcoming spirit of its people that make it truly special.">
 
-    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="credits site-wrapper">
+    <div class="site-wrapper">
         <header class="site-header">
             <img src="favicon/favicon.svg" alt="site logo">
             <nav class="site-navigation">
@@ -25,7 +31,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="credits">
             <h1>Credits and Acknowledgments for Images and Videos</h1>
             <section>
                 <h2>Home Page</h2>
@@ -36,9 +42,7 @@
                 <p>Sampaguita flower photo by <a href="https://unsplash.com/photos/a-white-flower-with-green-leaves-in-the-background-meMvT_FBTiQ">Luchie C.</a></p>
                 <p>Arnis photo by <a href="https://ph.pinterest.com/pin/387520742952484931/">Tatler Asia</a></p>
                 <p>Coat of Arms photo by <a href="https://en.m.wikipedia.org/wiki/File:Coat_of_arms_of_the_Philippines.svg">Wikipedia</a></p>
-                <p>Filipino language photo by <a href="https://ph.pinterest.com/pin/123004633565962908/"></a>Tee Public</p>
                 <p>Lupang Hinirang photo by <a href="https://ph.pinterest.com/pin/719590846713316886/">Chocolanay</a></p>
-                <p>Narra photo by <a href="https://en.wikipedia.org/wiki/File:Pterocarpus_indicus.jpg">Wikipedia</a></p>
                 <p>National motto photo by <a href="https://x.com/iamchingdee/status/806516844765020160">Chingdee</a></p>
             </section>
             <section>
@@ -57,7 +61,6 @@
                 <p>Chocolate Hills photo by <a href="https://unsplash.com/photos/green-trees-and-mountain-under-blue-sky-and-white-clouds-during-daytime-cq-BRra72Io">Aldrino</a></p>
                 <p>Hidden Beach photo by <a href="https://unsplash.com/photos/an-aerial-view-of-a-lagoon-surrounded-by-mountains-l3-7ClgQ15U">Geio Tischler</a></p>
                 <p>Mayon Volcano photo by <a href="https://unsplash.com/photos/a-mountain-with-clouds-1BrMHWxsBJQ">Kim Tayona</a></p>
-                <p>Siargao photo by <a href="https://unsplash.com/photos/boats-near-seashore-4flavNqoVZc">Alejandro Luengo</a></p>
                 <p>Vigan City photo by <a href="https://unsplash.com/photos/a-narrow-street-lined-with-parked-motorcycles-and-people-H1uqgwfVcvo">Kylle Pangan</a></p>
                 <p>Adobo photo by <a href="https://ph.pinterest.com/pin/579979258289219191/">Sandra Valvassori</a></p>
                 <p>Pancit photo by <a href="https://ph.pinterest.com/pin/307933693291408926/">Middle East Sector</a></p>
@@ -66,6 +69,22 @@
                 <p>Bibingka photo by <a href="https://ph.pinterest.com/pin/712976184791701119/">Tasty Twist Recipes</a></p>
                 <p>Halo-halo photo by <a href="https://ph.pinterest.com/pin/796011302874213410/">Droolius</a></p>
             </section>
+            <form action="#" method="post">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username">
+
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user-email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="user-password">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="user-message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit" class="submit">
+            </form>
         </main>
         <footer class="site-footer">
             <p>&copy; FWD 2024 — Lorie Belle Boslay</p>
